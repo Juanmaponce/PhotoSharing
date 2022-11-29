@@ -9,7 +9,7 @@ namespace PhotoSharing.Data
 {
     public class PhotoSharingContext : DbContext
     {
-        protected PhotoSharingContext():base(@"Data Source=.;Initial Catalog=PhotoSharing;Integrated Security=True")
+        public PhotoSharingContext():base(@"Data Source=.;Initial Catalog=PhotoSharing;Integrated Security=True")
         {
         }
         public DbSet<Photo> Photos { get; set; }
